@@ -1,0 +1,177 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="MyMaterialTheme" parent="MyMaterialTheme.Base" />
+
+
+    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:scrollbarThumbVertical">@android:color/transparent</item>
+
+    </style>
+
+    <style name="splashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">#fcf9f9</item>
+        <item name="colorAccent">@color/white</item>
+    </style>
+
+
+
+
+
+    <style name="NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@android:color/white</item>
+    </style>
+
+
+    <style name="CustomRatingbar" parent="Base.Widget.AppCompat.RatingBar.Small">
+        <item name="android:numStars">5</item>
+        <item name="android:progressTint" tools:ignore="NewApi">@color/textColor_Orange</item>
+
+
+    </style>
+
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <!-- Customize color of navigation drawer icon and back arrow -->
+        <item name="colorControlNormal">@android:color/white</item>
+    </style>
+
+    <style name="ExpandedAppBar" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingTop">20dp</item>
+    </style>
+
+    <style name="CollapsedAppBar" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="collapse" parent="@android:style/TextAppearance.Small">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Theatre_Seat_Recycler">
+        <item name="android:layout_height">@dimen/match_constraint</item>
+        <item name="android:layout_width">@dimen/match_constraint</item>
+        <item name="android:background">@android:color/background_light</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:padding">@dimen/seat_recycler_padding</item>
+        <item name="layoutManager">android.support.v7.widget.GridLayoutManager</item>
+        <item name="spanCount">4</item>
+    </style>
+
+    <style name="Theatre_Seat">
+        <item name="android:layout_height">@dimen/seat_frame_height</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_margin">@dimen/seat_margin</item>
+    </style>
+
+    <style name="Theatre_Seat_Number">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/seat_number_text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/seat_text</item>
+    </style>
+
+    <style name="Title">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+
+
+    <style name="LinearLayout" />
+
+    <style name="LinearLayout.Interests">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">14dp</item>
+        <item name="android:layout_marginLeft">14dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="TextView">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="TextView.Interest" parent="TextView">
+        <item name="android:background">@drawable/round_textview</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextView.Nickname" parent="TextView">
+        <item name="android:textSize">30sp</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+    </style>
+
+
+
+    <style name="tourismRatingBar" parent="@android:style/Widget.DeviceDefault.Light.RatingBar.Small">
+        <!--<item name="android:progressDrawable">@drawable/ratingstars</item>-->
+        <item name="android:layout_gravity">center</item>
+        <item name="android:progressTint">@color/textColor_Orange</item>
+
+    </style>
+
+    <style name="darkGreyRatingBar" parent="@android:style/Widget.DeviceDefault.Light.RatingBar.Small">
+        <!--<item name="android:progressDrawable">@drawable/ratingstars</item>-->
+        <item name="android:layout_gravity">center</item>
+        <item name="android:progressTint">@color/darkGrey</item>
+
+    </style>
+
+
+
+    <style name="EmergencyAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="EmergencyAppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="TextView.Tab" parent="TextView">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="SCBSwitch" parent="Theme.AppCompat.Light">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">@android:color/darker_gray</item>
+
+    </style>
+</resources>

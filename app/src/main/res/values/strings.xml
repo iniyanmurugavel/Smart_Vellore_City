@@ -1,0 +1,218 @@
+<resources>
+    <string name="app_name">Smart_Vellore_City</string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+
+    <string name="address">Address:</string>
+    <string name="plot_no_3">Plot No 3</string>
+    <string name="alankar_cinemas">Alankar Cinemas</string>
+    <string name="sarkar_tamil">Sarkar - Tamil</string>
+    <string name="location">Location</string>
+    <string name="todo">TODO</string>
+    <string name="_4_5">4.5</string>
+    <string name="movies_running">Movies\nRunning:</string>
+    <string name="review">
+        Vijay is in top form in a smart, overlong film that has a good message but lacks strong antagonists.
+    </string><![CDATA[ >
+
+    ]]>
+    <string name="selected">Selected</string>
+    <string name="available">Available</string>
+
+
+
+
+    <string name="name_doc">Name of the Document</string>
+    <string name="save">Save</string>
+    <string name="add_doc">Adding Document Alert</string>
+    <string name="book_now">Book Now</string>
+    <string name="popular_plum">Popular Service in Plumber Services</string>
+    <string name="popular_elec">Popular Service in Electrician Services</string>
+    <string name="popular_driver">Popular Service in Driver Services</string>
+    <string name="popular_carpenter">Popular Service in Carpenter Services</string>
+    <string name="popular_gardener">Popular Service in Gardener Services</string>
+    <string name="popular_ac">Popular Service in AC Services</string>
+    <string name="price_plum">Plumber Service Price List</string>
+    <string name="price_elec">Electrician Service Price List</string>
+    <string name="price_driver">Driver Service Price List</string>
+    <string name="price_carpenter">Carpenter Service Price List</string>
+    <string name="price_gardener">Gardener Service Price List</string>
+    <string name="price_ac">AC Service Price List</string>
+    <string name="item_name">Item Name</string>
+    <string name="price">Price</string>
+    <string name="ac_ins">AC Installation/Uninstallation</string>
+    <string name="win_ac">Window AC</string>
+    <string name="split_ac">Split AC</string>
+    <string name="insstalation">Installation</string>
+    <string name="min_charge">* Minimum Visit Charges : Rs 200 Applicable.</string>
+    <string name="rate_men">* The rates mentioned above and indicative and may change depending on the scope of work.</string>
+    <string name="add_charge">** Additional Rs 50 per half hour</string>
+    <string name="night_charges">** Night Charges ( Beyond 9:00 PM) - Rs 50 per half hour</string>
+    <string name="diff_pick">** Different Pickup and Drop Location : Rs 50 Extra</string>
+    <string name="outstation_drop">** Outstation Drop Only - Outstation Charges + Return ticket</string>
+    <string name="verify_no">Verify your Mobile number</string>
+    <string name="ur_name">Your Name</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="ur_num_for_otp">Your Mobile Number (for OTP)</string>
+    <string name="enter_number">Enter Your Mobile Number</string>
+    <string name="close">Close</string>
+    <string name="get_otp">Get OTP</string>
+    <string name="dist_off">District Level Officers</string>
+    <string name="desig">Designation</string>
+    <string name="mobile">Mobile</string>
+    <string name="landline">Landline</string>
+    <string name="email">Email</string>
+    <string name="disaster_mgmt">Disaster Management Contact Details</string>
+    <string name="disaster_mgmt_vellore">DISASTER MANAGEMENT SECTION – COLLECTORATE – VELLORE DISTRICT</string>
+    <string name="toll_free">TOLL FREE NO : 1077</string>
+    <string name="tah_disa_mgmt">TAHSILDAR DISASTER MANAGEMENT : 9894778839</string>
+    <string name="landline_no">LAND LINE : 0416 – 2258016</string>
+    <string name="fax_no">FAX NO : 0416 – 2253034</string>
+    <string name="pa_no">PERSONAL ASSISTANT ( GENERAL) TO THE COLLECTOR : 0416 – 2252501</string>
+    <string name="pa_fax_no">FAX NO : 0416 – 2253034 MOBILE : 9445008159</string>
+    <string name="first_doc">First respondents details – 2018 – 2019 (558KB)</string>
+    <string name="helpline_no">Helpline Numbers</string>
+    <string name="control_room">Control Room</string>
+    <string name="contact_no">Contact Number</string>
+    <string name="state_ctrl">State Control Room</string>
+    <string name="str_1070">1070</string>
+    <string name="dis_control_room">Collectorate Disaster Control Room</string>
+    <string name="str_1077">1077</string>
+    <string name="coll_board">Collectorate Board</string>
+    <string name="coll_board_no">0416-2252501</string>
+    <string name="police_control_room">Police Control Room</string>
+    <string name="str_100">100</string>
+    <string name="pol_whatsapp_no">Police Whatsapp No.</string>
+    <string name="pol_whatsapp_no_no">9092700100</string>
+    <string name="fire_rescue">Fire and Rescue</string>
+    <string name="str_101">101</string>
+    <string name="ambulance_help">Ambulance Help Line</string>
+    <string name="str_102">102</string>
+    <string name="accident_help">Accident Help Line</string>
+    <string name="str_108">108</string>
+    <string name="child_help">Child Help Line</string>
+    <string name="str_1098">1098</string>
+    <string name="sexual_harrassment">Sexual Harassment</string>
+    <string name="str_1091">1091</string>
+    <string name="bsnl_help">BSNL Help Line</string>
+    <string name="str_1500">1500</string>
+    <string name="ur_email">Your Email</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="message">Message</string>
+    <string name="enter_message">Enter Your Message</string>
+    <string name="send">Send</string>
+    <string name="blood_group">Blood Group</string>
+    <string name="education">Education</string>
+    <string name="work">Work</string>
+    <string name="gender">Gender</string>
+    <string name="marital_status">Marital Status</string>
+    <string name="dob">DOB</string>
+    <string name="ur_reason">Your Reason</string>
+    <string name="prematix">Prematix Software Solutions Pvt Ltd</string>
+    <string name="hosur_office"><u>Hosur Office</u></string>
+    <string name="hosur_company_address">51, Step Colony, Dharga, Hosur - 635126 \n Tamilnadu, India.</string>
+    <string name="hosur_company_landline">Landline : 04344 270900</string>
+    <string name="hosur_company_mobile">Mobile No : 9344 270900</string>
+    <string name="hosur_company_email">info@prematix.com</string>
+    <string name="blr_company_email">infoblr@prematix.com</string>
+    <string name="blr_company_landline">Landline : 080255 22220</string>
+    <string name="blr_company_address">No.589, 2nd floor, VP Chambers, \n 1st Cross, 3rd Block, Koramangala, \n Bengaluru - 560034, \n Karnataka, India.</string>
+    <string name="blr_office"><u>Bangalore Office</u></string>
+    <string name="privacy_pol">Privacy Policy of <b>Vellore Smart City</b></string>
+    <string name="privacy_pol_first">Prematix Software Solutions Pvt Policy built the Vellore Smart City app
+        as a Free app. This SERVICE is provided by Prematix Software Solutions Pvt Policy at
+        no cost and is intended for use as is.</string>
+    <string name="privacy_info">Information Collection and Use</string>
+    <string name="privacy_info_para">For a better experience, while using our Service, we may require you to provide us with certain personally identifiable information, including but not limited to Name,mobile number, email, address. The information that we request will be retained by us and used as described in this privacy policy.</string>
+    <string name="privacy_log_data">Log Data</string>
+    <string name="privacy_log_data_para">We want to inform you that whenever you use our Service, in a case of an error in the app we collect data and information (through third party products) on your phone called Log Data. This Log Data may include information such as your device Internet Protocol (“IP”) address, device name, operating system version, the configuration of the app when utilizing our Service, the time and date of your use of the Service, and other statistics.</string>
+    <string name="privacy_cookies">Cookies</string>
+    <string name="privacy_cookies_para">Cookies are files with a small amount of data that are commonly used as anonymous unique identifiers. These are sent to your browser from the websites that you visit and are stored on your device\'s internal memory.  This Service does not use these “cookies” explicitly. However, the app may use third party code and libraries that use “cookies” to collect information and improve their services. You have the option to either accept or refuse these cookies and know when a cookie is being sent to your device. If you choose to refuse our cookies, you may not be able to use some portions of this Service.</string>
+    <string name="privacy_security">Security</string>
+    <string name="privacy_security_para">We value your trust in providing us your Personal Information, thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and we cannot guarantee its absolute security.</string>
+    <string name="privacy_link">Links to Other Sites</string>
+    <string name="privacy_link_para">This Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these external sites are not operated by us. Therefore, we strongly advise you to review the Privacy Policy of these websites. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.</string>
+    <string name="privacy_children">Children’s Privacy</string>
+    <string name="privacy_children_para">These Services do not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13. In the case we discover that a child under 13 has provided us with personal information, we immediately delete this from our servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us so that we will be able to do necessary actions.</string>
+    <string name="list_ngos">List of NGOs</string>
+    <string name="list_post_off">List of Post Offices</string>
+    <string name="list_colleges_univ">List of Colleges/Universities</string>
+    <string name="list_registrar_off">List of Registrar Offices</string>
+    <string name="list_reg_transport_off">List of Regional Transport Offices</string>
+    <string name="list_municipalities">List of Municipalities</string>
+    <string name="list_bloodbanks">List of Blood Banks</string>
+    <string name="list_hospitals">List of Hospitals</string>
+
+
+    <string name="enter_age">Patient Age</string>
+    <string name="enter_username">Name</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Citizen Services</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="enter_mobileno">Mobile No</string>
+    <string name="spinner_title">Select School</string>
+
+
+    <string name="action_mapview">Show on Map</string>
+    <!--<string name="google_maps_key">AIzaSyAZBlMUj2FCXzWgbwM9273Q_5jYxeY0QBU </string>-->
+    <string name="searchTrains">SEARCH TRAINS</string>
+    <string name="pis_and">PIS &amp; E-Governance Service</string>
+    <string name="pay_utilities">Pay Utility Bills</string>
+    <string name="booking">Booking</string>
+    <string name="home_services">Home Services</string>
+
+
+
+    <string name="nearby">Nearby</string>
+    <string name="citizen_services">Citizen Services</string>
+    <string name="tourism">Tourism</string>
+    <string name="city_irrigation">City Irrigation</string>
+    <string name="eb_bill">EB Bill</string>
+    <string name="landline_bill">Landline Bill</string>
+    <string name="internet_bill">Internet Bill</string>
+    <string name="movies">Movies</string>
+    <string name="hotels">Hotels</string>
+    <string name="transport">Transport</string>
+    <string name="events">Events</string>
+    <string name="marriage_halls">Marriage Halls</string>
+    <string name="electrician">Electrician</string>
+    <string name="gardener">Gardener</string>
+    <string name="air_conditioner">Air Conditioner</string>
+    <string name="driver">Driver</string>
+    <string name="carpenter">Carpenter</string>
+    <string name="plumber">Plumber</string>
+    <string name="parking">Parking</string>
+    <string name="gas_bill">Gas Bill</string>
+    <string name="water_bill">Water Bill</string>
+    <string name="e_market">E Market Services</string>
+    <string name="other_services">Other Services</string>
+    <string name="agri">Agriculture</string>
+    <string name="rental_services">Rental Services</string>
+    <string name="health_care">HealthCare</string>
+    <string name="jobs">Jobs</string>
+    <string name="schools_colleges">Schools/Colleges</string>
+    <string name="about">About</string>
+
+    <string name="school_registry">School Registry</string>
+    <string name="nearby_wifi">Nearby Wifi</string>
+    <string name="fromdate">From Date</string>
+    <string name="todate">To Date</string>
+    <string name="dateOfBirth">Date of Birth</string>
+    <string name="subregoffice">Sub Register Office</string>
+    <string name="licencetype">Licence Type</string>
+    <string name="licenceno">Licence No</string>
+    <string name="licencezone">Zone</string>
+    <string name="selectvillage">Select Village</string>
+    <string name="serveyno">Servey No</string>
+    <string name="subdivname">Sub Division No</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="share_app">Share App</string>
+    <string name="app_features">App Features</string>
+    <string name="rating">Rating</string>
+    <string name="feedback">Feedback</string>
+</resources>

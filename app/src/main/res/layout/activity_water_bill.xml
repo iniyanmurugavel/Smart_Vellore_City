@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="8dp"
+        app:subtitleTextColor="@android:color/white"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextColor="@android:color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:paddingBottom="50dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/margin_10"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/amountLayout"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:background="@color/colorAccent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Amount"
+                        android:textColor="#fff"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="16dp"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="\u20B9"
+                            android:textColor="#fff"
+                            android:layout_marginLeft="16dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="120"
+                            android:textSize="70dp"
+                            android:id="@+id/amt"
+                            android:textColor="#fff"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_5"
+                    android:orientation="vertical">
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/et_eboard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:hint="Water Provider"
+                        android:inputType="text"
+                        android:textColorHint="@color/colorPrimaryDark"
+                        app:met_autoValidate="false"
+                        android:focusable="false"
+                        app:met_bottomTextSize="8dp"
+                        app:met_clearButton="false"
+                        app:met_errorColor="@android:color/holo_red_dark"
+                        app:met_floatingLabel="normal"
+                        app:met_floatingLabelAlwaysShown="false"
+                        android:drawablePadding="8dp"
+                        app:met_floatingLabelAnimating="true"
+                        app:met_floatingLabelPadding="8dp"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark"
+                        app:met_floatingLabelTextSize="12dp"
+                        app:met_helperText=""
+                        app:met_helperTextAlwaysShown="false"
+                        android:drawableLeft="@drawable/water"
+                        app:met_helperTextColor="@android:color/background_dark"
+                        app:met_iconPadding="8dp"
+                        app:met_primaryColor="@color/colorPrimaryDark"
+                        app:met_singleLineEllipsis="true"
+                        app:met_underlineColor="@android:color/white" />
+
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/et_consumer_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:hint="Consumer Number/RR.No"
+                        android:inputType="number"
+                        android:textColorHint="@color/colorPrimaryDark"
+                        app:met_autoValidate="false"
+                        app:met_bottomTextSize="8dp"
+                        app:met_clearButton="true"
+                        app:met_errorColor="@android:color/holo_red_dark"
+                        app:met_floatingLabel="normal"
+                        app:met_floatingLabelAlwaysShown="false"
+                        android:drawablePadding="8dp"
+                        app:met_floatingLabelAnimating="true"
+                        app:met_floatingLabelPadding="8dp"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark"
+                        app:met_floatingLabelTextSize="12dp"
+                        app:met_helperText=""
+                        android:maxLength="13"
+                        app:met_helperTextAlwaysShown="false"
+                        android:drawableLeft="@drawable/face"
+                        app:met_helperTextColor="@android:color/background_dark"
+                        app:met_iconPadding="8dp"
+                        app:met_primaryColor="@color/colorPrimaryDark"
+                        app:met_singleLineEllipsis="true"
+                        app:met_underlineColor="@android:color/white" />
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/done"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:visibility="gone"
+                        app:srcCompat="@drawable/white_move"
+                        app:fabSize="normal" />
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/add_future_use"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|end"
+                        app:srcCompat="@drawable/white_add"
+                        app:fabSize="mini" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/rec_pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:maxLength="10"
+                    android:text="Recent Payments"
+                    android:textSize="20dp"
+                    android:visibility="visible" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/Recent_recy_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_5"
+                    android:layout_marginTop="10dp">
+
+                </android.support.v7.widget.RecyclerView>
+
+
+            </LinearLayout>
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/rv_future_use">
+                </android.support.v7.widget.RecyclerView>
+
+            </android.support.v4.widget.NestedScrollView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/addFutureDetail"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:background="#fff"
+        android:visibility="visible"
+        app:behavior_peekHeight="270dp"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+        <LinearLayout
+            android:id="@+id/add_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="8dp"
+                android:background="#dfdfdf" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:text="ADD FUTURE USE"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:onClick="cancel"
+                    android:padding="16dp"
+                    app:srcCompat="@drawable/clear"
+                    android:tint="#888888" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/margin_5">
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/tiElectricity1"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/rv_eb_board"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Water Provider"
+                        android:drawableLeft="@drawable/water"
+                        android:inputType="text"
+                        android:focusable="false"
+                        android:drawablePadding="8dp"
+                        android:singleLine="true"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rv_consumer_ID">
+                    <EditText
+                        android:id="@+id/rv_consumer_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Consumer Number/RR.No"
+                        android:drawableLeft="@drawable/face"
+                        android:drawablePadding="8dp"
+                        android:maxLength="13"
+                        android:inputType="number"
+                        android:singleLine="true"/>
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ebhint_use"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/add_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="16dp"
+                app:srcCompat="@drawable/white_done"
+                app:fabSize="mini" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

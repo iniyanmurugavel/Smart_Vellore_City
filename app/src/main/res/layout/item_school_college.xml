@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/img_school"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_account_circle_black_24dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FFFF"/>
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:id="@+id/tv_name"
+                android:textStyle="bold"
+                android:text="Scool Name"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:id="@+id/tv_address"
+                android:text="School Address"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:layout_weight="1"
+                    android:id="@+id/tv_phno"
+                    android:textStyle="bold"
+                    android:drawablePadding="8dp"
+                    android:layout_gravity="center"
+                    android:drawableLeft="@drawable/ic_call_black_24dp"
+                    android:text="School Phno"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:layout_weight="1"
+                    android:id="@+id/tv_locate"
+                    android:textStyle="bold"
+                    android:drawablePadding="8dp"
+                    android:layout_gravity="center"
+                    android:drawableLeft="@drawable/ic_directions_colorprimary"
+                    android:text="Locate"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/textColor_normal"/>
+</LinearLayout>

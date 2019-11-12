@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myapp="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/submitpension"
+        android:icon="@drawable/ic_check_white"
+        android:title="Menu"
+        myapp:showAsAction="always" />
+</menu>

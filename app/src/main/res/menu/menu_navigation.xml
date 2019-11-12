@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/ic_man"
+            android:title="@string/profile" />
+
+
+    </group>
+
+    <group android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/share"
+            android:icon="@drawable/ic_share"
+            android:title="@string/share_app" />
+
+        <item
+            android:id="@+id/featuresvideo"
+            android:icon="@drawable/ic_features"
+            android:title="@string/app_features"
+            android:visible="false" />
+
+
+    </group>
+
+
+    <group android:checkableBehavior="none">
+
+
+        <item
+            android:id="@+id/rating"
+            android:icon="@drawable/ic_review"
+            android:title="@string/rating" />
+
+        <item
+            android:id="@+id/feedback"
+            android:icon="@drawable/ic_feedback"
+            android:title="@string/feedback" />
+        <item
+            android:id="@+id/about"
+            android:icon="@drawable/ic_about"
+            android:title="About us" />
+
+        <item
+            android:id="@+id/privacy"
+            android:icon="@drawable/ic_login"
+            android:title="Privacy" />
+        <item
+            android:id="@+id/language"
+            android:icon="@drawable/ic_translation"
+            android:title="Language" />
+
+    </group>
+</menu>
+

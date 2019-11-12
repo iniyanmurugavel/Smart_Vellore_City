@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:layout_width="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:mrl_rippleAlpha="0.2"
+        app:mrl_rippleColor="@color/colorAccent"
+        app:mrl_rippleOverlay="true"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageSlider"
+            />
+    </com.balysv.materialripple.MaterialRippleLayout>
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E44B50</color>
+    <color name="colorPrimaryDark">#e6343a</color>
+    <color name="colorAccent">#4E5E7B</color>
+
+    <color name="saffron">#F4B63E</color>
+    <color name="sienna">#EB6460</color>
+    <color name="green">#10b4a5</color>
+    <color name="pink">#ff4284</color>
+    <color name="orange">#ff8c6a</color>
+
+    <color name="white">#ffffff</color>
+
+    <color name="textColor_Black">#2e2e2e</color>
+    <color name="textColor_Orange">#f2b01e</color>
+    <color name="darkGrey">#787774</color>
+    <color name="tabIndicatorColor">#05204A</color>
+
+    <color name="unchosen_seat">#b4b4b4</color>
+
+    <color name="seat_text">#2cffffff</color>
+
+
+        <color name="darkGrey1">#aeadad</color>
+        <color name="light_green_new">#67b931</color>
+
+    <color name="textColor_normal">#aaa</color>
+    <color name="light_view">#cccccc</color>
+
+</resources>

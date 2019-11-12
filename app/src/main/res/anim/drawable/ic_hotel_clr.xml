@@ -1,0 +1,18 @@
+<vector android:height="24dp" android:viewportHeight="512.0"
+    android:viewportWidth="512.0" android:width="24dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#9B4573" android:pathData="M391.8,283.2l0,90.7l-85.8,0l0,-90.7l85.8,0"/>
+    <path android:fillColor="#FEC986" android:pathData="M33.2,357.5c0,-86.5 66.3,-156.7 148.1,-156.7c81.8,0 148.1,70.2 148.1,156.7v16.5L33.2,374L33.2,357.5z"/>
+    <path android:fillColor="#FEB860" android:pathData="M33.2,361.6c0,-61.5 47.1,-111.4 105.2,-111.4s105.2,49.9 105.2,111.4v11.7h-210.5L33.2,361.6z"/>
+    <path android:fillColor="#9B4573" android:pathData="M391.6,246.1l-85.8,0l0,-66l-23.4,-24.7l109.1,0z"/>
+    <path android:fillColor="#FEB860" android:pathData="M423,291.5h62.4v82.5h-62.4z"/>
+    <path android:fillColor="#C8546F" android:pathData="M17.6,374h483.3v12.4h-483.3z"/>
+    <path android:fillColor="#FFFFFF" android:pathData="M165.7,341.2h109.1v16h-109.1z"/>
+    <path android:fillColor="#FFFFFF" android:pathData="M134.5,341.2h15.6v16h-15.6z"/>
+    <path android:fillColor="#FEC986" android:pathData="M188.9,192.9v-17.2h8v-16h-31.2v16h8v17.2c-82.3,4.2 -148.1,76.4 -148.1,164.5h15.1c0,-82 63.1,-148.7 140.5,-148.7c77.5,0 140.6,66.7 140.6,148.7h15.1C337,269.3 271.2,197.1 188.9,192.9z"/>
+    <path android:fillColor="#FEC986" android:pathData="M461.7,234L461.7,205l20,-14.1l-8.4,-13.3L446.6,196.5v37.5h-31.2v123.5h15.1L430.5,299.5h47.2v58h15.1L492.9,234L461.7,234zM430.5,283.5v-33.5h16v25h15.1L461.7,250h16v33.5L430.5,283.5z"/>
+    <path android:fillColor="#C8546F" android:pathData="M412.9,241.8l-23.2,0l0,-16l8,0l0,-50l-8,0l0,-16l23.2,0z"/>
+    <path android:fillColor="#C8546F" android:pathData="M356.5,137.3l0,-16.7l-15.1,0l0,16.7l-31.4,0l0,16l78,0l0,-16z"/>
+    <path android:fillColor="#C8546F" android:pathData="M313.8,248h70.2v16h-70.2z"/>
+    <path android:fillColor="#C8546F" android:pathData="M399.4,357.5l-15.2,0l0,-66.2l-54.8,0l0,-16l69.9,0z"/>
+    <path android:fillColor="#FEB860" android:pathData="M165.7,159.7h31.1v15.4h-31.1z"/>
+</vector>

@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:elevation="7dp"
+        app:title="Train Booking Details"
+        app:titleTextColor="@color/white"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@android:color/darker_gray"
+        android:text="Train Details"
+        android:layout_margin="3dp"
+        android:textColor="@color/white"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_height="wrap_content"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/trainName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:text="Train Name:"
+            android:textColor="@color/black"
+             />
+            <TextView
+                android:id="@+id/trainName_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/trainName"
+                android:layout_marginLeft="7dp"
+                android:paddingTop="2dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/main_blue_color"
+                android:text="11022 / Chalukya Exp"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/fare"
+                android:layout_below="@+id/trainName"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_alignRight="@+id/trainName"
+                android:layout_marginTop="7dp"
+                android:text="Journey:"
+                android:textColor="@color/black"
+               />
+            <TextView
+                android:id="@+id/fare_tv"
+                android:layout_below="@+id/trainName"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/fare"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="7dp"
+                android:paddingTop="2dp"
+                android:text="Vellore - Chennai"
+                android:textColor="@color/main_blue_color"
+                android:textSize="12sp"/>
+            <TextView
+                android:id="@+id/jour_date"
+                android:layout_below="@+id/fare"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_alignRight="@+id/fare"
+                android:layout_marginTop="7dp"
+                android:text="Journey Date:"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:id="@+id/jour_date_tv"
+                android:layout_below="@+id/fare_tv"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/jour_date"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="7dp"
+                android:text="11/12/2018"
+                android:paddingTop="2dp"
+                android:textColor="@color/main_blue_color"
+                android:textSize="12sp"
+                android:drawablePadding="30dp"
+                android:drawableRight="@drawable/ic_calendar"
+                />
+
+            <TextView
+                android:id="@+id/classType"
+                android:layout_below="@+id/jour_date"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_alignRight="@+id/jour_date"
+                android:layout_marginTop="7dp"
+                android:text="Class Type:"
+                android:textColor="@color/black"
+               />
+
+            <TextView
+                android:id="@+id/cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/classType"
+                android:layout_alignEnd="@+id/fare"
+                android:layout_alignRight="@+id/classType"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="7dp"
+                android:text="Fare:"
+                android:textColor="@color/black" />
+            <TextView
+                android:id="@+id/cost_tv"
+                android:layout_below="@+id/radioGroup"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/cost"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="3dp"
+                android:text="Rs. 150"
+                android:paddingTop="2dp"
+                android:textColor="@color/main_blue_color"
+                android:textSize="12sp"
+                />
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/jour_date_tv"
+                android:layout_toRightOf="@+id/classType">
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Sleeper"
+                android:checked="true"
+                android:buttonTint="@color/black"
+                android:textColor="@color/main_blue_color"
+                android:textSize="12sp"
+               />
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:text="Ac"
+                android:checked="false"
+                android:buttonTint="@color/black"
+                android:textColor="@color/main_blue_color"
+                android:textSize="12sp"
+                />
+            <RadioButton
+                android:id="@+id/radio3"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:text="Non Ac"
+                android:checked="false"
+                android:paddingTop="2dp"
+                android:buttonTint="@color/black"
+                android:textColor="@color/main_blue_color"
+                android:textSize="12sp"
+                />
+            </RadioGroup>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@android:color/darker_gray"
+        android:text="Passenger Details"
+        android:layout_margin="3dp"
+        android:textColor="@color/white"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_height="wrap_content"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:descendantFocusability="beforeDescendants">
+
+            <TextView
+                android:id="@+id/info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:text="Name:"
+                android:textColor="@color/black"
+                 />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/info"
+                android:layout_below="@+id/info"
+                android:layout_marginTop="10dp"
+                android:text="Age:"
+                android:textColor="@color/black"
+                 />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/textView2"
+                android:layout_below="@+id/textView2"
+                android:layout_marginTop="10dp"
+                android:text="Sex:"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/textView3"
+                android:layout_below="@+id/textView3"
+                android:layout_marginTop="10dp"
+                android:text="E-Mail:"
+                android:paddingTop="10dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/textView4"
+                android:layout_below="@+id/textView4"
+                android:layout_marginTop="10dp"
+                android:text="Mobile:"
+                android:paddingTop="6dp"
+                android:layout_marginBottom="7dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/edtText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_toRightOf="@+id/info"
+                android:layout_marginTop="10dp"
+                android:textSize="12sp"
+                android:text="Murugan"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/editText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtText1"
+                android:layout_toRightOf="@+id/textView2"
+                android:layout_marginLeft="7dp"
+                android:textSize="12sp"
+                android:text="35 yrs"
+                android:paddingTop="3dp"
+                android:layout_marginTop="10dp"
+                android:inputType="number" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/editText2"
+                android:layout_toRightOf="@+id/textView3">
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="21dp"
+                android:gravity="center"
+                android:layout_marginTop="7dp"
+                android:buttonTint="@color/black"
+                android:textSize="12sp"
+                android:checked="false"
+                android:text="Female" />
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:buttonTint="@color/black"
+                android:layout_marginTop="7dp"
+                android:textSize="12sp"
+                android:text="Male" />
+            </RadioGroup>
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/editText3"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/textView4"
+                android:layout_below="@+id/radioGroup2"
+                android:text="murugan@gmail.com"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="5dp"
+                android:textSize="12sp"
+
+                android:backgroundTint="@color/black"
+                android:inputType="textEmailAddress" >
+
+            </android.support.v7.widget.AppCompatEditText>
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/editText4"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText3"
+                android:layout_toRightOf="@+id/textView4"
+                android:textSize="12sp"
+                android:maxLength="10"
+                android:backgroundTint="@color/black"
+                android:paddingTop="3dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="7dp"
+                android:text="8754137753"
+                android:inputType="phone" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="7dp"
+        android:textColor="@color/white"
+        android:background="@color/red_btn_bg_color"
+        android:layout_gravity="center"
+        android:text="Confirm" />
+</LinearLayout>

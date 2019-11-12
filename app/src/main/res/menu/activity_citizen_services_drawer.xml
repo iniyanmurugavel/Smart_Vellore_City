@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_eservices"
+            android:icon="@drawable/ic_icon_one"
+            android:title="E services" />
+        <item
+            android:id="@+id/nav_applicationstatus"
+            android:icon="@drawable/ic_icon_two"
+            android:title="Application status" />
+        <item
+            android:id="@+id/nav_genuinenessofcertificates"
+            android:icon="@drawable/ic_icon_three"
+            android:title="Genuineness of Certificates" />
+        <item
+            android:id="@+id/nav_pds"
+            android:icon="@drawable/ic_icon_four"
+            android:title="Public Distribution Systems" />
+        <item
+            android:id="@+id/nav_election"
+            android:icon="@drawable/ic_icon_five"
+            android:title="Online Election Services" />
+        <item
+            android:id="@+id/nav_transport"
+            android:icon="@drawable/ic_bill_payment"
+            android:title="E services - Bill Payment" />
+        <item
+            android:id="@+id/nav_aadhar"
+            android:icon="@drawable/ic_icon_seven"
+            android:title="Aadhar Online Services" />
+        <item
+            android:id="@+id/nav_employee"
+            android:icon="@drawable/ic_icon_eight"
+            android:title="Employee Exchange Services" />
+        <item
+            android:id="@+id/nav_electricity"
+            android:icon="@drawable/ic_icon_nine"
+            android:title="Pay electricity Bill" />
+        <item
+            android:id="@+id/nav_police"
+            android:icon="@drawable/ic_icon_ten"
+            android:title="Tamilnadu Police citizen potal" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:title="Nativity Certificate"
+        app:titleTextColor="@color/white"
+        android:elevation="4dp">
+
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_weight=".8">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:focusable="true"
+                android:descendantFocusability="beforeDescendants">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/name_met"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name of the Applicant"
+                    android:inputType="textNoSuggestions|textMultiLine"
+                    android:textSize="14sp"
+                    android:gravity="bottom"
+                    app:met_clearButton="true"
+                    app:met_floatingLabel="normal"
+                    app:met_primaryColor="@color/colorPrimaryDark"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"/>
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/fatherName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:focusable="true"
+                    android:gravity="bottom"
+                    android:focusableInTouchMode="true"
+                    android:hint="Father/Husband's Name"
+                    android:inputType="textNoSuggestions|textMultiLine"
+                    android:textSize="14sp"
+                    app:met_clearButton="true"
+                    app:met_floatingLabel="normal"
+                    app:met_primaryColor="@color/colorPrimaryDark" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sex:"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:textSize="14sp"/>
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Male"
+                        android:checked="true"
+                        android:buttonTint="@color/black"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Female"
+                        android:layout_marginLeft="15dp"
+                        android:buttonTint="@color/black"/>
+                </RadioGroup>
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/address_met"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:focusableInTouchMode="true"
+                    android:hint="Residential Address"
+                    android:gravity="bottom"
+                    android:inputType="textNoSuggestions|textMultiLine"
+                    android:textSize="14sp"
+                    app:met_clearButton="true"
+                    app:met_floatingLabel="normal"
+                    app:met_primaryColor="@color/colorPrimaryDark" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/schoolcert_met"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:focusableInTouchMode="false"
+                    android:drawableRight="@drawable/ic_attachment_black_24dp"
+                    android:hint="School Leaving Certificate "
+                    android:inputType="textNoSuggestions|textMultiLine"
+                    android:textSize="14sp"
+                    android:gravity="bottom"
+                    app:met_clearButton="false"
+                    app:met_floatingLabel="normal"
+                    app:met_primaryColor="@color/colorPrimaryDark" />
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/salarycert_met"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:gravity="bottom"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:focusableInTouchMode="false"
+                    android:hint="Immovable property of the parents in Tamil Nadu with necessary documents"
+                    android:drawableRight="@drawable/ic_attachment_black_24dp"
+                    android:inputType="textNoSuggestions|textMultiLine"
+                    android:textSize="14sp"
+                    app:met_clearButton="false"
+                    android:drawablePadding="10dp"
+                    app:met_floatingLabel="normal"
+                    app:met_primaryColor="@color/colorPrimaryDark" />
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/rationcard_met"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:focusableInTouchMode="false"
+                    android:hint="Ration Card Copy"
+                    android:inputType="textNoSuggestions|textMultiLine"
+                    android:drawableRight="@drawable/ic_attachment_black_24dp"
+                    android:textSize="14sp"
+                    android:gravity="bottom"
+                    app:met_clearButton="false"
+                    app:met_floatingLabel="normal"
+                    app:met_primaryColor="@color/colorPrimaryDark" />
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/date_met"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="Date of Application"
+                    android:inputType="textNoSuggestions|textMultiLine"
+                    android:textSize="14sp"
+                    android:gravity="bottom"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    app:met_clearButton="false"
+                    app:met_floatingLabel="normal"
+                    app:met_primaryColor="@color/colorPrimaryDark" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/signature_met"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="Signature"
+                    android:gravity="bottom"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:inputType="textNoSuggestions|textMultiLine"
+                    android:drawableRight="@drawable/ic_attachment_black_24dp"
+                    android:textSize="14sp"
+                    app:met_clearButton="false"
+                    app:met_floatingLabel="normal"
+                    app:met_primaryColor="@color/colorPrimaryDark" />
+
+            </LinearLayout>
+        </ScrollView>
+        <Button
+            android:id="@+id/submit_btn"
+            android:layout_weight=".2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:background="@color/red_btn_bg_color"/>
+    </LinearLayout>
+</LinearLayout>

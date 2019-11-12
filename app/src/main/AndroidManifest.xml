@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.smart_vellore_city">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_vimeo_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_vimeo_logo"
+        android:supportsRtl="true"
+        android:theme="@style/MyMaterialTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:icon">
+        <activity android:name=".dashboard.DashBoard">
+
+        </activity>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Movie_Booking.Activity.Home"
+            android:parentActivityName=".Movie_Booking.Activity.MainActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".Movie_Booking.Activity.LanguageSelect"
+            android:parentActivityName=".Movie_Booking.Activity.Home"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".Movie_Booking.Activity.Movies"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".Movie_Booking.Activity.MovieShow"
+            android:parentActivityName=".Movie_Booking.Activity.Movies"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".Movie_Booking.Activity.SeatSelect"
+            android:parentActivityName=".Movie_Booking.Activity.MovieShow"
+            android:theme="@style/NoActionBar" />
+
+        <activity
+            android:name=".Movie_Booking.Activity.MainActivity"
+            android:parentActivityName=".dashboard.NewDashBoard" />
+
+        <activity
+            android:name=".Event_Booking.Activity.Home"
+            android:parentActivityName=".dashboard.NewDashBoard" />
+
+        <activity android:name=".Movie_Booking.Activity.TourismMapsActivity" />
+
+        <activity
+            android:name=".parking.activities.ParkingAvailableActivity"
+            android:parentActivityName=".dashboard.NewDashBoard" />
+
+        <activity
+            android:name=".parking.activities.ParkingDetails"
+            android:parentActivityName=".parking.activities.ParkingAvailableActivity" />
+
+        <activity
+            android:name=".parking.activities.ParkingMap"
+            android:parentActivityName=".parking.activities.ParkingAvailableActivity" />
+
+        <activity
+            android:name=".weather.WeatherActivity"
+            android:parentActivityName=".dashboard.NewDashBoard" />
+
+        <activity
+            android:name=".jobs.JobsMainActivity"
+            android:parentActivityName=".dashboard.NewDashBoard" />
+
+        <activity
+            android:name=".Activity.About"
+            android:parentActivityName=".dashboard.NewDashBoard" />
+
+
+        <activity
+            android:name=".Activity.FeedbackForm"
+            android:parentActivityName=".dashboard.NewDashBoard" />
+
+        <activity
+            android:name=".Activity.PrivacyPolicy"
+            android:parentActivityName=".dashboard.NewDashBoard" />
+
+        <activity
+            android:name=".Activity.Profile"
+            android:parentActivityName=".dashboard.NewDashBoard" />
+
+        <activity
+            android:name=".Digilocker.DigiLocker"
+            android:parentActivityName=".dashboard.NewDashBoard" />
+
+        <activity
+            android:name=".Digilocker.PatternLock"
+            android:parentActivityName=".dashboard.NewDashBoard" />
+
+        <activity
+            android:name=".Directory.Activity.Directory"
+            android:parentActivityName=".Citizen_Services.activities.CitizenHome" />
+
+        <activity
+            android:name=".Directory.Activity.DirectoryOthers"
+            android:parentActivityName=".Directory.Activity.Directory" />
+
+        <activity
+            android:name=".Directory.Activity.PublicUtilities"
+            android:parentActivityName=".Directory.Activity.PublicUtilitiesDashboard" />
+
+        <activity
+            android:name=".Directory.Activity.PublicUtilitiesDashboard"
+            android:parentActivityName=".Directory.Activity.Directory" />
+
+        <activity
+            android:name=".Home_Services.Activity.HomeServices"
+            android:parentActivityName=".Home_Services.Activity.HomeServicesDashboard" />
+
+
+        <activity
+            android:name=".Home_Services.Activity.HomeServicesDashboard"
+            android:parentActivityName=".dashboard.NewDashBoard" />
+
+
+        <activity
+            android:name=".News_and_Announcement.NewsAnnouncementActivity"
+            android:parentActivityName=".dashboard.NewDashBoard" />
+
+        <activity
+            android:name=".agri.activity.AgriActivity"
+            android:parentActivityName=".dashboard.NewDashBoard" />
+
+        <activity
+            android:name=".E_Market.activity.EMarketActivity"
+            android:parentActivityName=".dashboard.DashBoard" />
+
+        <activity
+            android:name=".Rental.activity.RentalActivity"
+            android:parentActivityName=".dashboard.NewDashBoard"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".Tourism.activity.TourismMapsActivity"
+            android:parentActivityName=".Tourism.activity.TourismDetailActivity" />
+
+        <activity
+            android:name=".Tourism.activity.TourismHomeActivity"
+            android:parentActivityName=".dashboard.NewDashBoard" />
+
+        <activity
+            android:name=".Tourism.activity.TourismDetailActivity"
+            android:parentActivityName=".Tourism.activity.TourismHomeActivity" />
+
+        <activity
+            android:name=".Tourism.plan_trip.PlanTripActivity"
+            android:parentActivityName=".Tourism.activity.TourismHomeActivity" />
+
+        <activity
+            android:name=".Citizen_Services.activities.CitizenServicesActivity"
+            android:parentActivityName=".dashboard.NewDashBoard" />
+
+        <activity
+            android:name=".Emergency_Services.EmergencyDashboardActivity"
+            android:parentActivityName=".dashboard.NewDashBoard"
+            android:theme="@style/EmergencyAppTheme" />
+
+        <activity
+            android:name=".Emergency_Services.appoinments.ActivityAppoinment"
+            android:parentActivityName=".Emergency_Services.EmergencyDashboardActivity"
+            android:theme="@style/EmergencyAppTheme" />
+
+        <activity
+            android:name=".Emergency_Services.nearby.activities.NearBy"
+            android:parentActivityName=".Directory.Activity.Directory"
+            android:theme="@style/EmergencyAppTheme" />
+
+        <activity
+            android:name=".SchoolColleges.activities.SchoolCollegeActivity"
+            android:parentActivityName=".dashboard.NewDashBoard"
+            android:theme="@style/EmergencyAppTheme" />
+
+        <activity
+            android:name=".MarriageHall.activities.MarriageHallActivity"
+            android:parentActivityName=".dashboard.NewDashBoard"
+            android:theme="@style/EmergencyAppTheme" />
+
+        <activity
+            android:name=".MarriageHall.activities.MarriageHallDetails"
+            android:parentActivityName=".MarriageHall.activities.MarriageHallActivity"
+            android:theme="@style/EmergencyAppTheme.NoActionBar" />
+
+        <activity
+            android:name=".MarriageHall.activities.MarriageHappMapActivity"
+            android:parentActivityName=".MarriageHall.activities.MarriageHallActivity"
+            android:theme="@style/EmergencyAppTheme" />
+
+        <activity
+            android:name=".Registration.activities.RegistrationLoginActivity"
+            android:theme="@style/EmergencyAppTheme.NoActionBar">
+
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+
+        </activity>
+
+        <activity
+            android:name=".Activity.AboutHistoryDashboard"
+            android:parentActivityName=".dashboard.NewDashBoard" />
+
+        <activity
+            android:name=".About.Collectors.Activity.CollectorsList"
+            android:parentActivityName=".Activity.AboutHistoryDashboard" />
+
+        <activity
+            android:name=".About.ElectedRepresentatives.Activity.ElectedRepresentativesList"
+            android:parentActivityName=".Activity.AboutHistoryDashboard" />
+
+        <activity
+            android:name=".About.History.History"
+            android:parentActivityName=".Activity.AboutHistoryDashboard" />
+
+        <activity
+            android:name=".About.WhoIsWho.Activity.Who_Is_Who"
+            android:parentActivityName=".Activity.AboutHistoryDashboard" />
+
+        <activity
+            android:name=".dashboard.TransportDashboard"
+            android:parentActivityName=".dashboard.NewDashBoard" />
+
+        <activity
+            android:name=".Transport_Services.TrainServices.Activity.Home"
+            android:parentActivityName=".dashboard.TransportDashboard" />
+
+        <activity
+            android:name=".Transport_Services.BusServices.Activity.Home"
+            android:parentActivityName=".dashboard.TransportDashboard" />
+
+        <activity
+            android:name=".Auto_taxi.Activity.Home"
+            android:parentActivityName=".dashboard.TransportDashboard" />
+
+        <activity
+            android:name=".dashboard.AppFeatures"
+            android:parentActivityName=".dashboard.NewDashBoard" />
+
+        <activity
+            android:name=".Bills.EBBill"
+            android:parentActivityName=".Bills.BIllHome" />
+
+        <activity
+            android:name=".Bills.GasBill"
+            android:parentActivityName=".Bills.BIllHome" />
+
+        <activity
+            android:name=".Bills.WaterBill"
+            android:parentActivityName=".Bills.BIllHome" />
+
+        <activity
+            android:name=".Bills.Internet"
+            android:parentActivityName=".Bills.BIllHome" />
+
+        <activity
+            android:name=".Bills.Landline"
+            android:parentActivityName=".Bills.BIllHome" />
+
+        <activity
+            android:name=".parking.activities.ParkingSlots"
+            android:parentActivityName=".parking.activities.ParkingDetails"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".school.SchoolMainActivity"
+            android:parentActivityName=".Citizen_Services.activities.CitizenHome" />
+
+        <activity
+            android:name=".school.ListOfMyChildrens"
+            android:parentActivityName=".school.SchoolMainActivity" />
+
+        <activity
+            android:name=".school.TeacherReports"
+            android:parentActivityName=".school.ListOfMyChildrens" />
+
+        <activity
+            android:name=".Emergency_Services.appoinments.activity.DoctorListActivity"
+            android:parentActivityName=".Emergency_Services.EmergencyDashboardActivity"
+            android:theme="@style/EmergencyAppTheme.NoActionBar" />
+        <activity
+            android:name=".Emergency_Services.appoinments.activity.DoctorProfileActivity"
+            android:parentActivityName=".Emergency_Services.appoinments.activity.DoctorListActivity"
+            android:theme="@style/EmergencyAppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Emergency_Services.appoinments.activity.DoctorBookingActivity"
+            android:parentActivityName=".Emergency_Services.EmergencyDashboardActivity"
+            android:theme="@style/EmergencyAppTheme.NoActionBar" />
+
+        <activity android:name=".Transport_Services.TranportRoute_MapsActivity" />
+
+        <activity
+            android:name=".Citizen_Services.activities.CitizenHome"
+            android:parentActivityName=".dashboard.NewDashBoard" />
+
+        <activity
+            android:name=".Bills.BIllHome"
+            android:parentActivityName=".Citizen_Services.activities.CitizenHome" />
+
+        <service
+            android:name=".Service.PowerButtonService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service android:name=".Service.LockService" />
+
+        <activity
+            android:name=".wifi.Activity_Wifi"
+            android:parentActivityName=".Citizen_Services.activities.CitizenHome" />
+
+        <activity
+            android:name=".Transport_Services.BusServices.Activity.BookBus"
+            android:parentActivityName=".Transport_Services.BusServices.Activity.Home" />
+
+        <activity
+            android:name=".Transport_Services.TrainServices.Activity.BookTrain"
+            android:parentActivityName=".Transport_Services.TrainServices.Activity.Home" />
+
+
+        <activity
+            android:name=".MarriageHall.activities.MarriageHallBookingActivity"
+            android:parentActivityName=".MarriageHall.activities.MarriageHallActivity"
+            android:theme="@style/EmergencyAppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Tourism.plan_trip.HotelBookingActivity"
+            android:parentActivityName=".dashboard.NewDashBoard" />
+
+        <activity
+            android:name=".Tourism.plan_trip.HotelBookingDetailsActivity"
+            android:parentActivityName=".Tourism.plan_trip.HotelBookingActivity" />
+
+        <activity
+            android:name=".Tourism.plan_trip.HotelReviewBooking"
+            android:parentActivityName=".Tourism.plan_trip.HotelBookingDetailsActivity" />
+
+        <activity
+            android:name=".Event_Booking.Activity.BookEvent"
+            android:parentActivityName=".Event_Booking.Activity.Home" />
+
+        <activity android:name=".Activity.SplashScreen"
+            android:theme="@style/splashTheme">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".dashboard.NewDashBoard">
+
+        </activity>
+
+        <activity
+            android:name=".notification.NotificationActivity"
+            android:parentActivityName=".dashboard.NewDashBoard" />
+
+        <activity
+            android:name=".grievance.GrievanceActivity"
+            android:parentActivityName=".certificates.Dashboard_Certificates" />
+        <activity
+            android:name=".language.LanguageChoose"
+            android:parentActivityName=".dashboard.NewDashBoard" />
+
+        <activity android:name=".certificates.Dashboard_Certificates"
+            android:parentActivityName=".dashboard.NewDashBoard"/>
+
+        <activity android:name=".certificates.Activity_BirthCertificate"
+            android:parentActivityName=".certificates.Dashboard_Certificates"/>
+
+        <activity android:name=".certificates.Activity_CommunityCertificate"
+            android:parentActivityName=".certificates.Dashboard_Certificates"/>
+
+        <activity android:name=".certificates.Activity_DeathCertificate"
+            android:parentActivityName=".certificates.Dashboard_Certificates"/>
+
+        <activity android:name=".certificates.Activity_IncomeCertificate"
+            android:parentActivityName=".certificates.Dashboard_Certificates"/>
+
+        <activity android:name=".certificates.Activity_NativityCertificate"
+            android:parentActivityName=".certificates.Dashboard_Certificates"/>
+
+        <activity android:name=".Activity.GetSchemeDetails"
+            android:parentActivityName=".Citizen_Services.activities.CitizenHome"/>
+
+        <activity android:name=".land_reg.Land_Registration"
+            android:parentActivityName=".Citizen_Services.activities.CitizenHome"/>
+
+        <activity android:name=".registermarriage.RegisterMarriageActivity"
+            android:parentActivityName=".Citizen_Services.activities.CitizenHome"/>
+    </application>
+
+</manifest>

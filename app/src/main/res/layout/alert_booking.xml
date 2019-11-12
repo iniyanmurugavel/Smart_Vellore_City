@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/verify_no"
+            android:layout_gravity="center_horizontal"
+            android:padding="@dimen/margin_10"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:background="#bcaeae"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/margin_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ur_name"
+                android:padding="@dimen/margin_5"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg2"
+                android:hint="@string/enter_name"
+                android:id="@+id/et_name"
+                android:padding="@dimen/margin_5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ur_num_for_otp"
+                android:layout_marginTop="@dimen/margin_10"
+                android:padding="@dimen/margin_5"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg2"
+                android:hint="@string/enter_number"
+                android:id="@+id/et_number"
+                android:inputType="number"
+                android:maxLength="10"
+                android:padding="@dimen/margin_5"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:background="#bcaeae"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/margin_5">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg"
+                android:text="@string/close"
+                android:textStyle="bold"
+                android:id="@+id/btn_close"
+                android:layout_marginRight="30dp"
+                android:padding="@dimen/margin_5"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg3"
+                android:text="@string/get_otp"
+                android:textStyle="bold"
+                android:id="@+id/btn_getotp"
+                android:textColor="@color/white"
+                android:padding="@dimen/margin_5"
+                android:layout_marginLeft="80dp"
+                android:layout_gravity="end"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

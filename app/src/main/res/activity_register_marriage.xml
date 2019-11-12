@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".registermarriage.RegisterMarriageActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp">
+                <LinearLayout
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Marriage Search"
+                            android:layout_margin="4dp"
+                            android:textStyle="bold"
+                            android:textSize="16sp"/>
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/et_frm_Date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dimen_8dp"
+                            android:focusable="false"
+                            android:hint="@string/fromdate"
+                            android:inputType="text"
+                            android:textSize="@dimen/dimen_14sp"
+                            android:drawableRight="@drawable/ic_calendar"
+                            app:met_clearButton="false"
+                            app:met_floatingLabel="highlight"
+                            app:met_primaryColor="@color/colorPrimaryDark" />
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/et_to_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dimen_8dp"
+
+                            android:focusable="false"
+
+                            android:hint="@string/todate"
+
+                            android:inputType="text"
+                            android:textSize="@dimen/dimen_14sp"
+                            android:drawableRight="@drawable/ic_calendar"
+                            app:met_clearButton="false"
+                            app:met_floatingLabel="highlight"
+                            app:met_primaryColor="@color/colorPrimaryDark" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp">
+                <LinearLayout
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Husband Details"
+                            android:layout_margin="4dp"
+                            android:textStyle="bold"
+                            android:textSize="16sp"/>
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/et_hus_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dimen_8dp"
+                            android:focusable="true"
+                            android:hint="@string/enter_name"
+                            android:inputType="text"
+                            android:textSize="@dimen/dimen_14sp"
+                            app:met_clearButton="true"
+                            app:met_floatingLabel="highlight"
+                            app:met_primaryColor="@color/colorPrimaryDark" />
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/et_hus_dob"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dimen_8dp"
+
+                            android:focusable="false"
+
+                            android:hint="@string/dateOfBirth"
+
+                            android:inputType="text"
+                            android:textSize="@dimen/dimen_14sp"
+                            android:drawableRight="@drawable/ic_calendar"
+                            app:met_clearButton="false"
+                            app:met_floatingLabel="highlight"
+                            app:met_primaryColor="@color/colorPrimaryDark" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp">
+                <LinearLayout
+                    android:layout_margin="@dimen/dimen_4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Wife Details"
+                            android:layout_margin="4dp"
+                            android:textStyle="bold"
+                            android:textSize="16sp"/>
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/et_wife_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dimen_8dp"
+                            android:focusable="true"
+                            android:hint="@string/enter_name"
+                            android:inputType="text"
+                            android:textSize="@dimen/dimen_14sp"
+                            app:met_clearButton="true"
+                            app:met_floatingLabel="highlight"
+                            app:met_primaryColor="@color/colorPrimaryDark" />
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/et_wife_dob"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dimen_8dp"
+
+                            android:focusable="false"
+
+                            android:hint="@string/dateOfBirth"
+
+                            android:inputType="text"
+                            android:textSize="@dimen/dimen_14sp"
+                            android:drawableRight="@drawable/ic_calendar"
+                            app:met_clearButton="false"
+                            app:met_floatingLabel="highlight"
+                            app:met_primaryColor="@color/colorPrimaryDark" />
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Search"
+                        android:padding="14dp"
+                        android:textStyle="bold"
+                        android:layout_margin="@dimen/dimen_8dp"
+                        android:id="@+id/tv_search"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:background="@color/colorPrimary"
+                        android:textColor="@android:color/white"
+                        />
+                </LinearLayout>
+
+
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

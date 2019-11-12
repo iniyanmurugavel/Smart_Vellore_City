@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/ic_default_image" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_green_new"
+                    android:gravity="center"
+                    android:text=" * Licensed"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:id="@+id/license"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|start"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|start"
+                    android:gravity="start|center"
+                    android:text="PANDIA RAJAN "
+                    android:textColor="@color/textColor_Black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|start"
+                    android:drawableEnd="@drawable/ic_info"
+                    android:drawablePadding="8dp"
+                    android:drawableRight="@drawable/ic_info"
+                    android:gravity="start|center"
+                    android:text="3 Bookings"
+                    android:textColor="@color/textColor_Black"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:id="@+id/booking_num"
+
+                    />
+
+                <TextView
+                    android:id="@+id/desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|start"
+                    android:layout_marginTop="8dp"
+                    android:ellipsize="end"
+                    android:gravity="start|center"
+                    android:maxLines="3"
+                    android:singleLine="false"
+                    android:text="Hi, I'm Pandiarajan. I have been working as a Tour Guide/escort, I also started working as a freelance guide and tour leader since 2004 and now"
+                    android:textColor="@color/textColor_Black"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/languages_known"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|start"
+                    android:gravity="start|center"
+                    android:text="Languages Known : English (primary), English (Fluent), Hindi (Fluent), German (Basic)"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="start|center"
+                android:text="4.2"
+                android:textColor="@color/textColor_Orange"
+                android:textSize="14sp"
+                android:textStyle="bold"
+
+                />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="@style/tourismRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="3.5"
+
+                />
+
+            <TextView
+                android:id="@+id/call_now"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="end|center"
+                android:text="CALL NOW"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false" >
+
+    <item
+        android:drawable="@drawable/hione"
+        android:duration="150"/>
+    <item
+        android:drawable="@drawable/hitwo"
+        android:duration="150"/>
+    <item
+        android:drawable="@drawable/hithree"
+        android:duration="150"/>
+    <item
+        android:drawable="@drawable/hifour"
+        android:duration="150"/>
+    <item
+        android:drawable="@drawable/hifive"
+        android:duration="150"/>
+    <item
+        android:drawable="@drawable/hisix"
+        android:duration="150"/>
+
+
+</animation-list>

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/white"
+            android:elevation="8dp"
+            app:title="Marriagehall Booking"
+            app:subtitleTextColor="@color/darkGrey"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:titleTextColor="@color/darkGrey" />
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Function Catagory"
+                android:drawableRight="@drawable/ic_chevron_right_black_24dp"
+                android:textStyle="bold"
+                android:id="@+id/tv_fun_catagory"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp"
+                android:padding="8dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/calendar_iv_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:minHeight="30dp"
+                    android:minWidth="30dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_circle_with_an_arrow_pointing_to_left" />
+
+                <TextView
+                    android:id="@+id/calender_tv_month_year_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:text="DEC 2018"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/calendar_iv_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:minHeight="30dp"
+                    android:minWidth="30dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_arrow_pointing_right_in_a_circle" />
+
+            </LinearLayout>
+
+            <com.github.sundeepk.compactcalendarview.CompactCalendarView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/compactcalendar_view"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_margin="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                app:compactCalendarBackgroundColor="@color/white"
+                app:compactCalendarCurrentDayBackgroundColor="@color/white"
+                app:compactCalendarCurrentSelectedDayBackgroundColor="@color/colorPrimaryDark"
+                app:compactCalendarCurrentSelectedDayTextColor="@color/white"
+                app:compactCalendarMultiEventIndicatorColor="@color/colorPrimaryDark"
+                app:compactCalendarTargetHeight="250dp"
+                app:compactCalendarTextColor="@color/black"
+                app:compactCalendarTextSize="12sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:id="@+id/tv_booking_date_from"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp"
+                android:padding="8dp"/>
+            <View
+                android:layout_marginLeft="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_margin="4dp"
+                android:background="@color/light_view"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No of Days"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp"
+                android:padding="8dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="4dp"
+                android:padding="4dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_weight="1"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:background="@drawable/ic_oval"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/tv_day_one"
+                        android:text="1"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:background="@drawable/ic_oval"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/tv_day_two"
+                        android:text="2"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:background="@drawable/doctor_timings_selected"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@android:color/white"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/tv_day_three"
+                        android:text="3"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:background="@drawable/ic_oval"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/tv_day_four"
+                        android:text="4"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:background="@drawable/ic_oval"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/tv_day_five"
+                        android:text="5"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <View
+                android:layout_marginLeft="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_margin="4dp"
+                android:background="@color/light_view"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_weight="1.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_package"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:gravity="left"
+                        android:text="₹ 100 / Per Session"
+                        android:padding="8dp"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:layout_weight="1.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_booknow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:drawablePadding="4dp"
+                        android:background="@drawable/gradient_rounded_corners"
+                        android:text="Continue"
+                        android:drawableRight="@drawable/ic_arrow_forward_black_24dp"
+                        android:padding="10dp"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

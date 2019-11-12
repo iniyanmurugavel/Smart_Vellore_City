@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="8dp"
+        app:subtitleTextColor="@android:color/white"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextColor="@android:color/white" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll_contact"
+                android:visibility="visible"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAccent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dist_off"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:padding="@dimen/margin_10"/>
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none"
+                    android:layout_margin="@dimen/margin_5"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll_disaster_mgmt"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAccent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/disaster_mgmt"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:padding="@dimen/margin_10"/>
+
+                </LinearLayout>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="@dimen/margin_5"
+                    android:layout_margin="@dimen/margin_10">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/margin_5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/margin_5"
+                            android:text="@string/disaster_mgmt_vellore"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height=".5dp"
+                            android:background="#bcaeae"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/margin_5"
+                            android:text="@string/toll_free"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height=".5dp"
+                            android:background="#bcaeae"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/margin_5"
+                            android:text="@string/tah_disa_mgmt"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height=".5dp"
+                            android:background="#bcaeae"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:padding="@dimen/margin_5"
+                            android:layout_height="wrap_content"
+                            android:text="@string/landline_no"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height=".5dp"
+                            android:background="#bcaeae"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:padding="@dimen/margin_5"
+                            android:layout_height="wrap_content"
+                            android:text="@string/fax_no"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height=".5dp"
+                            android:background="#bcaeae"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:padding="@dimen/margin_5"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pa_no"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height=".5dp"
+                            android:background="#bcaeae"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:padding="@dimen/margin_5"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pa_fax_no"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height=".5dp"
+                            android:background="#bcaeae"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:padding="@dimen/margin_5"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimary"
+                            android:text="@string/first_doc"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height=".5dp"
+                            android:background="#bcaeae"/>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll_helpline"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAccent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/helpline_no"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:padding="@dimen/margin_10"/>
+
+                </LinearLayout>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="@dimen/margin_5"
+                    android:layout_margin="@dimen/margin_10">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/margin_5"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:background="@drawable/bg_text"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textAlignment="center"
+                                android:textStyle="bold"
+                                android:padding="@dimen/margin_5"
+                                android:text="@string/control_room"/>
+
+                            <View
+                                android:layout_width=".5dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorAccent"
+                                android:layout_weight=".01"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".9"
+                                android:textAlignment="center"
+                                android:textStyle="bold"
+                                android:padding="@dimen/margin_5"
+                                android:text="@string/contact_no"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="@dimen/margin_5"
+                            android:background="@drawable/bg_text">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="2"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="@dimen/margin_5"
+                                    android:textAlignment="center"
+                                    android:text="@string/state_ctrl"/>
+
+                                <View
+                                    android:layout_width=".5dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorAccent"
+                                    android:layout_weight=".01"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:padding="@dimen/margin_5"
+                                    android:layout_weight=".9"
+                                    android:textAlignment="center"
+                                    android:text="@string/str_1070"/>
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height=".5dp"
+                                android:background="@color/colorAccent"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="2"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="@dimen/margin_5"
+                                    android:textAlignment="center"
+                                    android:text="@string/dis_control_room"/>
+
+                                <View
+                                    android:layout_width=".5dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorAccent"
+                                    android:layout_weight=".01"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".9"
+                                    android:padding="@dimen/margin_5"
+                                    android:textAlignment="center"
+                                    android:text="@string/str_1077"/>
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height=".5dp"
+                                android:background="@color/colorAccent"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="2"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="@dimen/margin_5"
+                                    android:textAlignment="center"
+                                    android:text="@string/coll_board"/>
+
+                                <View
+                                    android:layout_width=".5dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorAccent"
+                                    android:layout_weight=".01"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".9"
+                                    android:padding="@dimen/margin_5"
+                                    android:textAlignment="center"
+                                    android:text="@string/coll_board_no"/>
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height=".5dp"
+                                android:background="@color/colorAccent"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="2"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="@dimen/margin_5"
+                                    android:textAlignment="center"
+                                    android:text="@string/police_control_room"/>
+
+                                <View
+                                    android:layout_width=".5dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorAccent"
+                                    android:layout_weight=".01"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".9"
+                                    android:padding="@dimen/margin_5"
+                                    android:textAlignment="center"
+                                    android:text="@string/str_100"/>
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height=".5dp"
+                                android:background="@color/colorAccent"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="2"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="@dimen/margin_5"
+                                    android:textAlignment="center"
+                                    android:text="@string/pol_whatsapp_no"/>
+
+                                <View
+                                    android:layout_width=".5dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorAccent"
+                                    android:layout_weight=".01"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".9"
+                                    android:padding="@dimen/margin_5"
+                                    android:textAlignment="center"
+                                    android:text="@string/pol_whatsapp_no_no"/>
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height=".5dp"
+                                android:background="@color/colorAccent"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="2"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="@dimen/margin_5"
+                                    android:textAlignment="center"
+                                    android:text="@string/fire_rescue"/>
+
+                                <View
+                                    android:layout_width=".5dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorAccent"
+                                    android:layout_weight=".01"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".9"
+                                    android:padding="@dimen/margin_5"
+                                    android:textAlignment="center"
+                                    android:text="@string/str_101"/>
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height=".5dp"
+                                android:background="@color/colorAccent"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="2"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="@dimen/margin_5"
+                                    android:textAlignment="center"
+                                    android:text="@string/ambulance_help"/>
+
+                                <View
+                                    android:layout_width=".5dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorAccent"
+                                    android:layout_weight=".01"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".9"
+                                    android:padding="@dimen/margin_5"
+                                    android:textAlignment="center"
+                                    android:text="@string/str_102"/>
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height=".5dp"
+                                android:background="@color/colorAccent"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="2"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="@dimen/margin_5"
+                                    android:textAlignment="center"
+                                    android:text="@string/accident_help"/>
+
+                                <View
+                                    android:layout_width=".5dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorAccent"
+                                    android:layout_weight=".01"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".9"
+                                    android:padding="@dimen/margin_5"
+                                    android:textAlignment="center"
+                                    android:text="@string/str_108"/>
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height=".5dp"
+                                android:background="@color/colorAccent"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="2"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="@dimen/margin_5"
+                                    android:textAlignment="center"
+                                    android:text="@string/child_help"/>
+
+                                <View
+                                    android:layout_width=".5dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorAccent"
+                                    android:layout_weight=".01"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".9"
+                                    android:padding="@dimen/margin_5"
+                                    android:textAlignment="center"
+                                    android:text="@string/str_1098"/>
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height=".5dp"
+                                android:background="@color/colorAccent"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="2"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="@dimen/margin_5"
+                                    android:textAlignment="center"
+                                    android:text="@string/sexual_harrassment"/>
+
+                                <View
+                                    android:layout_width=".5dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorAccent"
+                                    android:layout_weight=".01"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".9"
+                                    android:padding="@dimen/margin_5"
+                                    android:textAlignment="center"
+                                    android:text="@string/str_1091"/>
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height=".5dp"
+                                android:background="@color/colorAccent"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="2"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:textAlignment="center"
+                                    android:padding="@dimen/margin_5"
+                                    android:text="@string/bsnl_help"/>
+
+                                <View
+                                    android:layout_width=".5dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorAccent"
+                                    android:layout_weight=".01"/>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".9"
+                                    android:padding="@dimen/margin_5"
+                                    android:textAlignment="center"
+                                    android:text="@string/str_1500"/>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    </LinearLayout>
+</LinearLayout>

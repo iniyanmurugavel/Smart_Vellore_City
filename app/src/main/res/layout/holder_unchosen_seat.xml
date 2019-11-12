@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+  <FrameLayout
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      android:id="@+id/seat"
+      android:background="@color/unchosen_seat"
+       android:layout_width="match_parent"
+       android:layout_height="76dp"
+      android:layout_margin="@dimen/seat_margin">
+    <TextView
+        android:id="@+id/seatNumber"
+        tools:text="12"
+         style="@style/Theatre_Seat_Number"
+        />
+  </FrameLayout>

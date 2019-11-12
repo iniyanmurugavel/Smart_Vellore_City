@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/event_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/no_image" />
+
+
+        <TextView
+            android:id="@+id/eventName_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/event_img"
+            android:gravity="center"
+            android:text="Title"
+            android:visibility="gone"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/eventSource_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/eventName_tv"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/event_img"
+            android:gravity="center_vertical"
+            android:text="Source:"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/eventSource"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/eventName_tv"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/eventSource_tv"
+            android:gravity="center"
+            android:paddingTop="2dp"
+            android:paddingLeft="5dp"
+            android:text="Vellore"
+            android:textSize="14sp"
+           />
+
+        <TextView
+            android:id="@+id/eventDestination_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/eventSource_tv"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/event_img"
+            android:gravity="center_vertical"
+            android:text="Destination:"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/eventDestination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/eventSource"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/eventDestination_tv"
+            android:gravity="center"
+            android:paddingTop="3dp"
+            android:paddingLeft="5dp"
+            android:text="Chennai"
+            android:textSize="14sp"
+           />
+        <TextView
+            android:id="@+id/eventDate_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/eventDestination_tv"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/event_img"
+            android:gravity="center_vertical"
+            android:text="Starts at:"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/eventDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/eventDestination"
+            android:layout_toRightOf="@+id/eventDate_tv"
+            android:gravity="center"
+            android:paddingTop="3dp"
+            android:paddingLeft="5dp"
+            android:text="9:30 AM"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/eventFare_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/eventDate_tv"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/event_img"
+            android:gravity="center_vertical"
+            android:text="Fare:"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/eventFare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/eventDate"
+            android:layout_toRightOf="@+id/eventFare_tv"
+            android:gravity="center"
+            android:paddingTop="3dp"
+            android:paddingLeft="5dp"
+            android:text="Rs. 150"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/eventDuration_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/eventFare_tv"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/event_img"
+            android:gravity="center_vertical"
+            android:text="Duration:"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/eventDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/eventFare"
+            android:layout_toRightOf="@+id/eventDuration_tv"
+            android:gravity="center"
+            android:paddingTop="3dp"
+            android:paddingLeft="5dp"
+            android:text="8 hrs"
+            android:textSize="14sp"
+            />
+        <Button
+            android:id="@+id/call_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="CALL"
+            android:visibility="gone"
+            android:textColor="@android:color/white"
+            android:padding="5dp"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/phone_call"
+            android:background="@drawable/roundcorner"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/eventDuration"
+            android:layout_margin="5dp"
+            />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

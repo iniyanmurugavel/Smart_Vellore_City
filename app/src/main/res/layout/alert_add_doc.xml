@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_10"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_doc"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/add_image"
+            android:layout_margin="@dimen/margin_10"
+            android:src="@drawable/ic_add_black"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_name"
+            android:hint="@string/name_doc"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/save"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:background="@drawable/bg"
+            android:id="@+id/btn_save"
+            android:layout_marginBottom="@dimen/margin_10"/>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

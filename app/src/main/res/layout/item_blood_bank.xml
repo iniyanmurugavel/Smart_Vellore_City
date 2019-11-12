@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_5"
+            android:elevation="@dimen/margin_5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_name"
+                    android:textStyle="bold"
+                    android:padding="@dimen/margin_5"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_landline"
+                    android:textAlignment="center"
+                    android:text="@string/landline"
+                    android:padding="@dimen/margin_5"
+                    android:drawableLeft="@drawable/ic_old_typical_phone"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_pincode"
+                    android:textAlignment="center"
+                    android:padding="@dimen/margin_5"
+                    android:drawableLeft="@drawable/ic_location_black"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_email"
+                    android:padding="@dimen/margin_5"
+                    android:text="@string/email"
+                    android:textAlignment="center"
+                    android:drawableLeft="@drawable/ic_mail_black_envelope_symbol"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_address"
+                    android:padding="@dimen/margin_5"
+                    android:text="@string/email"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

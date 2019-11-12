@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/schooltoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="8dp"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:subtitleTextColor="@android:color/white"
+        app:titleTextColor="@android:color/white" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:layout_margin="12dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="District"
+            android:padding="4dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12sp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vellore"
+            android:padding="6dp"
+            android:focusable="false"
+            android:drawableLeft="@drawable/ic_location_on_red"
+            android:textSize="16sp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:drawablePadding="6dp"
+            android:id="@+id/district"
+            android:elevation="6dp"
+            android:background="@drawable/background_gradient_rounded_white"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select School"
+            android:padding="4dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12sp"/>
+
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:prompt="@string/spinner_title"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+
+            android:elevation="6dp"
+            android:padding="6dp"
+            android:background="@drawable/background_gradient_rounded_white"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Student Id"
+            android:padding="4dp"
+            android:layout_marginLeft="10dp"
+
+            android:layout_marginTop="12dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12sp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:padding="6dp"
+            android:focusable="auto"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:drawableLeft="@drawable/user_red"
+            android:textSize="16sp"
+            android:drawablePadding="6dp"
+            android:elevation="6dp"
+            android:id="@+id/studentid"
+            android:background="@drawable/background_gradient_rounded_white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundcorner_red"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:layout_gravity="top"
+                android:elevation="6dp"
+                android:id="@+id/submit"
+                android:text="Submit"/>
+
+
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:backgroundTint="@color/white"
+            android:layout_margin="12dp"
+            android:elevation="6dp"
+            android:id="@+id/studentdetails"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/color_add"
+                android:id="@+id/addstudent"
+                android:padding="4dp"
+                android:layout_gravity="end"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:padding="8dp"
+                android:orientation="horizontal">
+
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="0.5"
+                    android:layout_gravity="center"
+                    android:src="@drawable/kid"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Iniyan"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Xth Standard"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="9463231656"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hosur"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"/>
+
+                    </LinearLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
